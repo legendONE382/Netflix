@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="A responsive Netflix-inspired landing page built with HTML5 and CSS3." />
+    <title>NETFLIX &mdash; Unlimited movies, TV shows & more</title>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+    <!-- ============ LOADING ANIMATION (Bonus) ============ -->
+    <div class="loader" id="loader">
+        <span class="loader__logo">NETFLIX</span>
+    </div>
+
+    <!-- ============ NAVIGATION BAR ============ -->
+    <header class="navbar" id="top">
+        <nav class="navbar__inner">
+            <a href="#top" class="logo">NETFLIX</a>
+
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#trending">TV Shows</a></li>
+                <li><a href="#popular">Movies</a></li>
+                <li><a href="#toprated">New &amp; Popular</a></li>
+                <li><a href="#continue">My List</a></li>
+            </ul>
+
+            <a href="#join" class="btn btn--signin">Sign In</a>
+        </nav>
+    </header>
+
+    <!-- ============ HERO SECTION ============ -->
+    <section class="hero" id="home">
+        <div class="hero__overlay"></div>
+        <div class="hero__content">
+            <p class="hero__tag">FEATURED SERIES</p>
+            <h1 class="hero__title">The Midnight Horizon</h1>
+            <p class="hero__desc">
+                When a mysterious signal awakens an ancient force, a group of
+                unlikely heroes must race against time to save their world. An epic
+                journey of courage, betrayal, and hope awaits.
+            </p>
+            <div class="hero__buttons">
+                <a href="#trending" class="btn btn--play">&#9658; Play</a>
+                <a href="#faq" class="btn btn--info">&#9432; More Info</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ TRENDING NOW ============ -->
+    <section class="row" id="trending">
+        <h2 class="row__title">Trending Now</h2>
+        <div class="card-grid">
+            <div class="card card--g1"><span class="card__label">Neon Nights</span></div>
+            <div class="card card--g2"><span class="card__label">Ocean Deep</span></div>
+            <div class="card card--g3"><span class="card__label">Steel City</span></div>
+            <div class="card card--g4"><span class="card__label">Wild Frontier</span></div>
+            <div class="card card--g5"><span class="card__label">The Last Code</span></div>
+            <div class="card card--g6"><span class="card__label">Crimson Sky</span></div>
+            <div class="card card--g7"><span class="card__label">Lost Signal</span></div>
+            <div class="card card--g8"><span class="card__label">Golden Hour</span></div>
+        </div>
+    </section>
+
+    <!-- ============ POPULAR ON NETFLIX ============ -->
+    <section class="row" id="popular">
+        <h2 class="row__title">Popular on Netflix</h2>
+        <div class="card-grid">
+            <div class="card card--p1"><span class="card__label">Shadow Realm</span></div>
+            <div class="card card--p2"><span class="card__label">Velvet Moon</span></div>
+            <div class="card card--p3"><span class="card__label">Iron Legacy</span></div>
+            <div class="card card--p4"><span class="card__label">Paper Kingdom</span></div>
+            <div class="card card--p5"><span class="card__label">Frozen Echo</span></div>
+            <div class="card card--p6"><span class="card__label">Dust &amp; Gold</span></div>
+            <div class="card card--p7"><span class="card__label">Electric Dreams</span></div>
+            <div class="card card--p8"><span class="card__label">Silent Harbor</span></div>
+        </div>
+    </section>
+
+    <!-- ============ CONTINUE WATCHING ============ -->
+    <section class="row" id="continue">
+        <h2 class="row__title">Continue Watching</h2>
+        <div class="continue-grid">
+            <article class="watch-card">
+                <div class="watch-card__poster watch-card--w1"></div>
+                <div class="watch-card__body">
+                    <h3 class="watch-card__title">Neon Nights</h3>
+                    <div class="progress"><span class="progress__fill" style="width:70%"></span></div>
+                    <p class="watch-card__remaining">30% remaining</p>
+                </div>
+            </article>
+            <article class="watch-card">
+                <div class="watch-card__poster watch-card--w2"></div>
+                <div class="watch-card__body">
+                    <h3 class="watch-card__title">Shadow Realm</h3>
+                    <div class="progress"><span class="progress__fill" style="width:45%"></span></div>
+                    <p class="watch-card__remaining">55% remaining</p>
+                </div>
+            </article>
+            <article class="watch-card">
+                <div class="watch-card__poster watch-card--w3"></div>
+                <div class="watch-card__body">
+                    <h3 class="watch-card__title">Ocean Deep</h3>
+                    <div class="progress"><span class="progress__fill" style="width:88%"></span></div>
+                    <p class="watch-card__remaining">12% remaining</p>
+                </div>
+            </article>
+            <article class="watch-card">
+                <div class="watch-card__poster watch-card--w4"></div>
+                <div class="watch-card__body">
+                    <h3 class="watch-card__title">Crimson Sky</h3>
+                    <div class="progress"><span class="progress__fill" style="width:20%"></span></div>
+                    <p class="watch-card__remaining">80% remaining</p>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- ============ TOP RATED ============ -->
+    <section class="row" id="toprated">
+        <h2 class="row__title">Top 10 in Your Country</h2>
+        <div class="top-grid">
+            <div class="top-card"><span class="top-card__num">1</span><div class="top-card__poster tp1"></div></div>
+            <div class="top-card"><span class="top-card__num">2</span><div class="top-card__poster tp2"></div></div>
+            <div class="top-card"><span class="top-card__num">3</span><div class="top-card__poster tp3"></div></div>
+            <div class="top-card"><span class="top-card__num">4</span><div class="top-card__poster tp4"></div></div>
+            <div class="top-card"><span class="top-card__num">5</span><div class="top-card__poster tp5"></div></div>
+            <div class="top-card"><span class="top-card__num">6</span><div class="top-card__poster tp6"></div></div>
+            <div class="top-card"><span class="top-card__num">7</span><div class="top-card__poster tp7"></div></div>
+            <div class="top-card"><span class="top-card__num">8</span><div class="top-card__poster tp8"></div></div>
+            <div class="top-card"><span class="top-card__num">9</span><div class="top-card__poster tp9"></div></div>
+            <div class="top-card"><span class="top-card__num">10</span><div class="top-card__poster tp10"></div></div>
+        </div>
+    </section>
+
+    <!-- ============ REASONS TO JOIN ============ -->
+    <section class="reasons" id="join">
+        <h2 class="row__title">More Reasons to Join</h2>
+        <div class="reasons-grid">
+            <article class="reason-card">
+                <span class="reason-card__icon">&#127916;</span>
+                <h3 class="reason-card__title">Unlimited Movies</h3>
+                <p class="reason-card__desc">Stream thousands of movies and shows anytime with no limits and no ads.</p>
+            </article>
+            <article class="reason-card">
+                <span class="reason-card__icon">&#128241;</span>
+                <h3 class="reason-card__title">Watch Anywhere</h3>
+                <p class="reason-card__desc">Enjoy on your phone, tablet, laptop, and TV without paying more.</p>
+            </article>
+            <article class="reason-card">
+                <span class="reason-card__icon">&#11015;</span>
+                <h3 class="reason-card__title">Download Offline</h3>
+                <p class="reason-card__desc">Save your favorites easily and always have something to watch offline.</p>
+            </article>
+            <article class="reason-card">
+                <span class="reason-card__icon">&#128100;</span>
+                <h3 class="reason-card__title">Multiple Profiles</h3>
+                <p class="reason-card__desc">Create up to five profiles for people who live with you.</p>
+            </article>
+        </div>
+    </section>
+
+    <!-- ============ FAQ ============ -->
+    <section class="faq" id="faq">
+        <h2 class="row__title">Frequently Asked Questions</h2>
+        <div class="faq-list">
+            <div class="faq-item">
+                <h3 class="faq-item__q">What is Netflix? <span class="faq-item__icon">+</span></h3>
+                <p class="faq-item__a">Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, and documentaries on thousands of internet-connected devices.</p>
+            </div>
+            <div class="faq-item">
+                <h3 class="faq-item__q">How much does Netflix cost? <span class="faq-item__icon">+</span></h3>
+                <p class="faq-item__a">Watch Netflix on your smartphone, tablet, Smart TV, laptop, or streaming device, all for one fixed monthly fee with plans ranging from budget to premium.</p>
+            </div>
+            <div class="faq-item">
+                <h3 class="faq-item__q">Where can I watch? <span class="faq-item__icon">+</span></h3>
+                <p class="faq-item__a">Watch anywhere, anytime. Sign in with your account to watch instantly on the web or on any internet-connected device that offers the Netflix app.</p>
+            </div>
+            <div class="faq-item">
+                <h3 class="faq-item__q">Can I cancel anytime? <span class="faq-item__icon">+</span></h3>
+                <p class="faq-item__a">Netflix is flexible. There are no annoying contracts and no commitments. You can easily cancel your account online in two clicks.</p>
+            </div>
+            <div class="faq-item">
+                <h3 class="faq-item__q">What can I watch? <span class="faq-item__icon">+</span></h3>
+                <p class="faq-item__a">Netflix has an extensive library of feature films, documentaries, TV shows, anime, award-winning originals, and more. Watch as much as you want, anytime.</p>
+            </div>
+        </div>
+
+        <div class="join-cta">
+            <p>Ready to watch? Enter your email to create or restart your membership.</p>
+            <form class="join-cta__form" onsubmit="return false;">
+                <input type="email" placeholder="Email address" class="join-cta__input" />
+                <button class="btn btn--get">Get Started &#10148;</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- ============ FOOTER ============ -->
+    <footer class="footer">
+        <p class="footer__contact">Questions? Call <a href="tel:1-800-000-0000">1-800-000-0000</a></p>
+        <div class="footer__links">
+            <a href="#">Contact Us</a>
+            <a href="#">Help Center</a>
+            <a href="#">Privacy</a>
+            <a href="#">Terms of Use</a>
+            <a href="#">Jobs</a>
+            <a href="#">Cookie Preferences</a>
+        </div>
+        <div class="footer__social">
+            <a href="#" aria-label="Facebook" class="social">f</a>
+            <a href="#" aria-label="Instagram" class="social">&#9673;</a>
+            <a href="#" aria-label="Twitter" class="social">t</a>
+            <a href="#" aria-label="YouTube" class="social">&#9654;</a>
+        </div>
+        <p class="footer__copy">&copy; 2026 Netflix Clone. Built for educational purposes with HTML &amp; CSS.</p>
+    </footer>
+
+    <!-- ============ BACK TO TOP BUTTON (Bonus) ============ -->
+    <a href="#top" class="back-to-top" aria-label="Back to top">&#9650;</a>
+
+</body>
+</html>
